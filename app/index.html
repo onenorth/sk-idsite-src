@@ -24,6 +24,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/stormpath.js/dist/stormpath.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
   </head>
@@ -56,6 +57,12 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div class="custom-header" ng-controller="HeaderFooter">
+      <img class="custom-header-logo" ng-src="{{logoUrl}}"/>
+      <a ng-href="{{backUrl}}" class="custom-header-back-url">{{backUrlLabel}}</a>
+      <div class="custom-header-login-prompt">{{loginPromptText}}</div>
+    </div>
+
     <div class="container" ng-controller="ErrorCtrl" ng-cloak>
       <div class="logo-container">
         <img ng-show="logoUrl" class="logo img-responsive" ng-src="{{logoUrl}}"/>
@@ -64,6 +71,11 @@
       <div ng-hide="inError" ng-view="">
         <!-- this will be replaced a the view, as determined by the route config in app.js -->
       </div>
+    </div>
+
+    <div class="custom-footer" ng-controller="HeaderFooter">
+      <div class="custom-footer-join-prompt">{{joinPromptText}}</div>
+      <div class="custom-footer-disclaimer">{{disclaimerText}}</div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -102,6 +114,7 @@
     <script src="scripts/directives/passwordmatchvalidation.js"></script>
     <script src="scripts/directives/passwordpolicyvalidation.js"></script>
     <script src="scripts/controllers/unverified.js"></script>
+    <script src="scripts/controllers/headerfooter.js"></script>
     <!-- endbuild -->
 
     <!-- build:remove -->
