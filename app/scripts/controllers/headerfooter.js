@@ -13,15 +13,15 @@ angular.module('stormpathIdpApp')
 
     domainToContentMapping = {
       alumni: {
-        logoUrl: 'https://www.skadden.com/sites/all/themes/skadden_main/images/alumni_footer.png',
+        headerLogoUrl: 'https://www.skadden.com/sites/all/themes/skadden_main/images/alumni_footer.png',
         backUrl: '#backAlumni',
         backUrlLabel: 'Alumni Back Url Label',
         loginPromptText: 'Login Alumns',
         joinPromptText: 'Contact XYZ to join the Alumni site',
         disclaimerText: 'Alumni disclaimer text - Lorem Ipsum'
       },
-      fellows: {
-        logoUrl: 'https://www.skaddenfellowships.org/sites/all/themes/skadden_fellows/images/logo.png',
+      foundation: {
+        headerLogoUrl: 'https://www.skaddenfellowships.org/sites/all/themes/skadden_fellows/images/logo.png',
         backUrl: '#backFellows',
         backUrlLabel: 'Fellows Back Url Label',
         loginPromptText: 'Login Fellows',
@@ -35,7 +35,7 @@ angular.module('stormpathIdpApp')
     domainContent = domainToContentMapping[domain];
 
     if (domainContent){
-      $scope.logoUrl = domainContent.logoUrl;
+      $scope.headerLogoUrl = domainContent.headerLogoUrl;
       $scope.backUrl = domainContent.backUrl;
       $scope.backUrlLabel = domainContent.backUrlLabel;
       $scope.loginPromptText = domainContent.loginPromptText;
