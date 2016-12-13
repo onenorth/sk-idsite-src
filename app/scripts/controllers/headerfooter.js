@@ -20,13 +20,13 @@ angular.module('stormpathIdpApp')
         joinPromptText: 'Contact XYZ to join the Alumni site',
         disclaimerText: 'Alumni disclaimer text - Lorem Ipsum'
       },
-      foundation: {
+      fellows: {
         logoUrl: 'https://www.skaddenfellowships.org/sites/all/themes/skadden_fellows/images/logo.png',
-        backUrl: '#backFoundation',
-        backUrlLabel: 'Foundation Back Url Label',
-        loginPromptText: 'Login Foundation',
-        joinPromptText: 'Contact XYZ to join the Foundation site',
-        disclaimerText: 'Foundation disclaimer text - Lorem Ipsum'
+        backUrl: '#backFellows',
+        backUrlLabel: 'Fellows Back Url Label',
+        loginPromptText: 'Login Fellows',
+        joinPromptText: 'Contact XYZ to join the Fellows site',
+        disclaimerText: 'Fellows disclaimer text - Lorem Ipsum'
       }
     };
 
