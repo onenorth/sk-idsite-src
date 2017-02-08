@@ -13,19 +13,17 @@ angular.module('stormpathIdpApp')
 
     domainToContentMapping = {
       alumni: {
-        headerLogoUrl: 'images/logo.svg',
-        backUrl: '#backAlumni',
-        backUrlLabel: 'Alumni Back Url Label',
-        loginPromptText: 'Login Alumns',
-        joinPromptText: 'Contact XYZ to join the Alumni site',
+        headerLogoUrl: 'images/logo.png',
+        backUrl: '//skadden.com',
+        backUrlLabel: 'RETURN TO SKADDEN.COM',
+        loginPromptText: 'Please Login to access the Alumni Network',
         disclaimerText: 'Alumni disclaimer text - Lorem Ipsum'
       },
       foundation: {
-        headerLogoUrl: 'images/foundation-logo.svg',
-        backUrl: '#backFellows',
+        headerLogoUrl: 'images/foundation-logo.png',
+        backUrl: '//skaddenfellowships.org',
         backUrlLabel: 'Fellows Back Url Label',
-        loginPromptText: 'Login Fellows',
-        joinPromptText: 'Contact XYZ to join the Fellows site',
+        loginPromptText: 'Please Login to access the Foundation Network',
         disclaimerText: 'Fellows disclaimer text - Lorem Ipsum'
       }
     };
@@ -39,7 +37,6 @@ angular.module('stormpathIdpApp')
       $scope.backUrl = domainContent.backUrl;
       $scope.backUrlLabel = domainContent.backUrlLabel;
       $scope.loginPromptText = domainContent.loginPromptText;
-      $scope.joinPromptText = domainContent.joinPromptText;
       $scope.disclaimerText = domainContent.disclaimerText;
     }
   });
