@@ -10,15 +10,27 @@
 
 .custom-header-back-url {
 	color: @skadden-red;
-	font-weight: 800;
-	font-size: 22px;
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 20px;
+
+	&:hover {
+		color: @skadden-black;
+	}
 
 	&:before {
 		content: "❮";
 		display: inline-block;
-		vertical-align: middle;
 		margin-right: 10px;
-		font-size: 18px;
+		font-size: 20px;
 	}
 }
 
+
+
+.custom-header-login-prompt {
+	text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 10%;
+}

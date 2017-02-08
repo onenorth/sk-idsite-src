@@ -17,18 +17,20 @@ angular.module('stormpathIdpApp')
         backUrl: '//skadden.com',
         backUrlLabel: 'RETURN TO SKADDEN.COM',
         loginPromptText: 'Please Login to access the Alumni Network',
-        disclaimerText: 'Alumni disclaimer text - Lorem Ipsum'
+        disclaimerText: 'Please note that you may access and use this section of our website only for lawful purposes. You may not use alumni data provided herein in connection with the transmission of mass unsolicited, commercial advertising or solicitations via direct mail, electronic mail or by telephone. In addition, the compilation, repackaging, dissemination or other commercial use of alumni data is prohibited.'
       },
       foundation: {
         headerLogoUrl: 'images/foundation-logo.png',
         backUrl: '//skaddenfellowships.org',
-        backUrlLabel: 'Fellows Back Url Label',
+        backUrlLabel: 'RETURN TO SKADDEN FOUNDATION',
         loginPromptText: 'Please Login to access the Foundation Network',
-        disclaimerText: 'Fellows disclaimer text - Lorem Ipsum'
+        disclaimerText: 'Please note that you may access and use this section of our website only for lawful purposes. You may not use foundation data provided herein in connection with the transmission of mass unsolicited, commercial advertising or solicitations via direct mail, electronic mail or by telephone. In addition, the compilation, repackaging, dissemination or other commercial use of foundation data is prohibited.'
       }
     };
 
     domain = $location.host().split('.')[0];
+
+    console.log(domain);
 
     domainContent = domainToContentMapping[domain];
 
