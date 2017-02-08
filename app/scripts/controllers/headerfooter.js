@@ -13,7 +13,7 @@ angular.module('stormpathIdpApp')
 
     domainToContentMapping = {
       alumni: {
-        headerLogoUrl: 'https://www.skadden.com/sites/all/themes/skadden_main/images/alumni_footer.png',
+        headerLogoUrl: 'images/logo.svg',
         backUrl: '#backAlumni',
         backUrlLabel: 'Alumni Back Url Label',
         loginPromptText: 'Login Alumns',
@@ -21,7 +21,7 @@ angular.module('stormpathIdpApp')
         disclaimerText: 'Alumni disclaimer text - Lorem Ipsum'
       },
       foundation: {
-        headerLogoUrl: 'https://www.skaddenfellowships.org/sites/all/themes/skadden_fellows/images/logo.png',
+        headerLogoUrl: 'images/foundation-logo.svg',
         backUrl: '#backFellows',
         backUrlLabel: 'Fellows Back Url Label',
         loginPromptText: 'Login Fellows',
