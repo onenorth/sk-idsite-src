@@ -3,19 +3,9 @@
     <div class="email-password-area  col-xs-12" ng-class="[hasProviders ? 'small col-sm-8' : 'large col-sm-12']">
       <div class="header">
         <span>Log In</span>
-        <span ng-show="canRegister" wd-can-register>
-          <span> or </span>
-          <a href="#register">Create an Account</a>
-        </span>
-
       </div>
       <div class="alert alert-danger bad-login" ng-show="errors.badLogin">
         Invalid username or password.
-      </div>
-      <div class="alert alert-danger not-found" ng-show="errors.notFound">
-        <span>Account does not exist. Do you need to </span>
-        <a href="#/register">create an account</a>
-        <span>?</span>
       </div>
       <div class="alert alert-danger" ng-show="errors.unknown">An unkown error has occurred</div>
       <div class="alert alert-danger" ng-show="errors.emailPasswordRequired">Please enter your email and password.</div>
