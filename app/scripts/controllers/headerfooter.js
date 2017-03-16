@@ -11,6 +11,8 @@ angular.module('stormpathIdpApp')
         domainToContentMapping,
         domainContent;
 
+     $scope.isReady = false;
+
     domainToContentMapping = {
       alumni: {
         headerLogoUrl: 'images/logo.png',
@@ -30,8 +32,6 @@ angular.module('stormpathIdpApp')
 
     domain = $location.host().split('.')[0];
 
-    console.log(domain);
-
     domainContent = domainToContentMapping[domain];
 
     if (domainContent){
@@ -40,5 +40,9 @@ angular.module('stormpathIdpApp')
       $scope.backUrlLabel = domainContent.backUrlLabel;
       $scope.loginPromptText = domainContent.loginPromptText;
       $scope.disclaimerText = domainContent.disclaimerText;
+    } else {
+      console.log(domain);
     }
+
+    $scope.isReady = true;
   });
